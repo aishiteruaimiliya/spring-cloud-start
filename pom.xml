@@ -33,8 +33,12 @@
     </dependencyManagement>
 
     <modules>
-        <module>cppba-spring-cloud-eureka-server</module>
-        <module>cppba-spring-cloud-eureka-client</module>
-        <module>cppba-spring-cloud-eureka-discovery</module>
+        <module>pinghuang-spring-cloud-eureka-server</module>
+        <module>pinghuang-spring-cloud-eureka-client</module>
+        <module>pinghuang-spring-cloud-eureka-discovery</module>
+        <module>pinghuang-spring-cloud-zuul</module>
+        <module>pinghuang-spring-cloud-config-server</module>
+        <module>pinghuang-spring-cloud-config-client</module>
+        <module>pinghuang-spring-cloud-eureka-config-provider</module>
     </modules>
 </project>

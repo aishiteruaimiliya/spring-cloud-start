@@ -1,17 +1,21 @@
 package main.java;
 
+import main.java.filter.TokenFilter;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.boot.web.servlet.ServletRegistrationBean;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
-import org.springframework.cloud.netflix.hystrix.EnableHystrix;
+import org.springframework.cloud.netflix.zuul.EnableZuulProxy;
 import org.springframework.context.annotation.Bean;
 
 @SpringBootApplication
-@EnableEurekaClient
-public class APP {
+@EnableZuulProxy
+public class ZuulApplication {
     public static void main(String[] args) {
-        SpringApplication.run(APP.class,args);
+        SpringApplication.run(ZuulApplication.class,args);
     }
 
+    @Bean
+    public TokenFilter tokenFilter(){
+        return new TokenFilter();
+    }
 }

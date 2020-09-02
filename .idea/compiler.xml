@@ -6,12 +6,18 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="pinghuang-spring-cloud-eureka-client" />
-        <module name="Springcloudstart" />
-        <module name="pinghuang-spring-cloud-eureka-server" />
+        <module name="pinghuang-spring-cloud-eureka-config-provider" />
         <module name="pinghuang-spring-cloud-eureka-discovery" />
+        <module name="pinghuang-spring-cloud-config-server" />
+        <module name="pinghuang-spring-cloud-eureka-server" />
+        <module name="pinghuang-spring-cloud-eureka-client" />
+        <module name="pinghuang-spring-cloud-config-client" />
+        <module name="pinghuang-spring-cloud-zuul" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="Springcloudstart" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
